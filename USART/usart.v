@@ -1,3 +1,6 @@
+`include "../fifo/fifo.v"
+`include "../shift_register/parallel_to_serial.v"
+`include "../shift_register/serial_to_parallel.v"
 module usart (
     input wire clk,
     input wire rst,
