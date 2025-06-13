@@ -73,9 +73,13 @@ module fifo_tb;
         repeat (5) @(posedge clk);
 
         $display("\nRead all data out\n");
-        while (!empty) begin
+        repeat (FIFO_DEPTH) begin
             @(posedge clk);
-            rd_en = 1;
+            if (!empty) begin
+                rd_en = 1;
+            end else begin
+                rd_en = 0;
+            end
         end
         rd_en = 0;
 
