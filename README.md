@@ -1,6 +1,10 @@
 
 ## 📦 Modules Overview
-
+### ✅ SPI (Serial Peripheral Interface)
+- **Description:** Implements SPI communication protocol supporting master and slave modes.
+- **Features:** Full-duplex serial communication with configurable clock polarity and phase.
+- **Files:** `spi_master.v`, `spi_slave.v`, `spi_tb.v`
+  
 ### ✅ USART (Universal Synchronous/Asynchronous Receiver/Transmitter)
 - **Description**: Handles serial communication for transmitting and receiving 8-bit data.
 - **Files**: `usart.v`, `usart_tb.v`
